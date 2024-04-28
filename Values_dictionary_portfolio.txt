@@ -1,0 +1,69 @@
+Hello! This is meant to be an explanation of all the values I used in my analysis file. Here they are:
+
+df = This is a datafame for the original excel file, with all of its thousands of columns
+
+profit_filtered = a series value holding true and false values for which charities were profitable (True if profitable, False if not)
+
+df_filtered = a dataframe version of the profit_filtered series
+
+team_names_column = a temporary value meant to store the team name's column from the original dataframe so I can insert it into df_filtered
+
+df_true_profit = a dataframe created from df_filtered with only the charities that were profitable
+
+df_true_loss = a dataframe created from df_filtered with only the charities that weren't profitable
+
+total_revenue_column = a temporary value meant to store the total revenue column from the original dataframe so I can insert it into df_filtered
+
+total_expenses_column = a temporary value meant to store the total expenses column from the original dataframe so I can insert it into df_filtered
+
+df_true_profit_revenue_median = a dataframe created so I could calculate the median revenue value of profitable charities
+
+df_true_profit_expenses_median = a dataframe created so I could calculate the median expenses value of profitable charities
+
+df_true_loss_revenue_median = a dataframe created so I could calculate the median revenue value of unprofitable charities
+
+df_true_loss_expenses_median = a dataframe created so I could calculate the median expenses value of unprofitable charities
+
+team_league_column = a temporary value meant to store the team's league column from the original dataframe so I can insert it into df_filtered
+
+df_filtered_mlb = a dataframe with only MLB teams 
+
+df_filtered_nba = a dataframe with only NBA teams 
+
+df_filtered_nfl = a dataframe with only NFL teams 
+
+df_filtered_nhl = a dataframe with only NHL teams 
+
+tax_year_column = a temporary value meant to store the tax year column from the original dataframe so I can insert it into df_filtered and others
+
+profit_amount_column = a temporary value meant to store the profit amount from df_true_profit so I can add those values to that dataframe
+
+loss_amount_column = a temporary value meant to store the loss amount from df_true_loss so I can add those values to that dataframe
+
+region_column = a temporary value meant to store the region column from the original dataframe so I can insert it into df_filtered
+
+df_filtered_west = a dataframe with only teams from the west 
+
+df_filtered_south = a dataframe with only teams from the south 
+
+df_filtered_midwest = a dataframe with only teams from the midwest 
+
+df_filtered_northeast = a dataframe with only teams from the northeast 
+
+df_updated = a dataframe for the updated excel file. still full of columns
+
+df_updated_filtered = a series value telling me which teams spent more on other expenses than on donations. returns true/false values for all teams on df_updated
+
+teams_more_expenses = a dataframe version of the previous series
+
+teams_more_expenses_true = a dataframe that only shows the teams who had "True" attached to them in the previous dataframe. In other words, only the teams that spent more on other expenses than on donations
+
+team_names_column_updated = df_updated['Team name'] = a temporary value meant to store the team name's column from the original dataframe so I can insert it into teams_more_expenses_true
+
+other_expenses_column = df_updated['Other Expenses (I - 17)'] = a temporary value meant to store the other expenses value column from the original dataframe so I can insert it into teams_more_expenses_true
+
+donations_column = df_updated['Functional Expenses - Grants and other assistance to domestic organizations and domestic governments, Total Expenses, Column A (Part IX1)'] = a temporary value meant to store the donations value column from the original dataframe so I can insert it into teams_more_expenses_true
+
+tax_year_column_updated = df_updated['Tax year (the year in the top right corner)'] = a temporary value meant to store the tax year column from the original dataframe so I can insert it into teams_more_expenses_true
+
+
